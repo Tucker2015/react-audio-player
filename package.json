@@ -1,6 +1,6 @@
 {
   "name": "@kevtucker/react-audio-player",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "React Audio Player Component",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -11,10 +11,6 @@
     "README.md"
   ],
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tucker2015/react-audio-player"
-  },
   "scripts": {
     "prebuild": "rm -rf dist",
     "rollup-watch": "rollup -c -w",

@@ -2,6 +2,10 @@
 
 Simple React Audio Player with Artwork option.
 
+[![npm version](https://badge.fury.io/js/@kevtucker%2Freact-audio-player.svg)](https://badge.fury.io/js/@kevtucker%2Freact-audio-player)
+[![GitHub version](https://badge.fury.io/gh/Tucker2015%2Freact-audio-player.svg)](https://badge.fury.io/gh/Tucker2015%2Freact-audio-player)
+![npm](https://img.shields.io/npm/dw/@kevtucker/react-audio-player)
+
 ## Installation with NPM
 
 ```bash
