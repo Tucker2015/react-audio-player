@@ -2,7 +2,7 @@ import React from 'react'
 import { AudioProps } from './Player.types'
 import './Player.css'
 
-const Player = ({ title, artist, src, artwork }: AudioProps) => {
+const Player = ({ title, artist, src, artwork, bg, position, hidden }: AudioProps) => {
 
     const [playing, setPlaying] = React.useState(false);
     const [loading, setLoading] = React.useState(false);
@@ -24,7 +24,13 @@ const Player = ({ title, artist, src, artwork }: AudioProps) => {
     }
 
     return (
-        <div className='player'>
+        <div
+            style={{
+                background: bg ? bg : "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%)"
+            }}
+            className={`player ${position === "bottom" ? "player__bottom" : "player"
+                } ${hidden ? "hidden" : ""}`}
+        >
             <audio ref={audioEl}
                 src={src}
                 onPlay={() => setPlaying(true)}

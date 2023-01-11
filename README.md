@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Player
-        source="https://streams.ktinternet.net:8010/d"
+        src="https://streams.ktinternet.net:8010/d"
         title="Peoples City Radio"
         artist="Live"
         artwork="https://picsum.photos/200"
@@ -36,3 +36,22 @@ function App() {
   );
 }
 ```
+
+## Props
+
+| Prop     | Type    | Default  | Description                |
+| -------- | ------- | -------- | -------------------------- |
+| src      | string  | ""       | The audio source           |
+| title    | string  | ""       | The title of the audio     |
+| artist   | string  | ""       | The artist of the audio    |
+| artwork  | string  | ""       | The artwork of the audio   |
+| position | string  | "bottom" | The position of the player |
+| hidden   | boolean | false    | Hide the player until used |
+
+## Screenshots
+
+![Screenshot](/img/screenshot.png?raw=true "Screenshot")
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
