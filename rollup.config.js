@@ -30,7 +30,17 @@ export default [
             resolve(),
             commonjs(),
             typescript({ tsconfig: "./tsconfig.json" }),
-            postcss(),
+            postcss({
+                config: {
+                    path: "./postcss.config.js",
+                },
+                extensions: [".css"],
+                minimize: true,
+                inject: {
+                    insertAt: "top",
+                },
+            }),
+            // postcss(),
             // postcss({
             //     plugins: [autoprefixer()],
             //     minimize: true,
